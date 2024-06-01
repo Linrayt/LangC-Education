@@ -1,4 +1,6 @@
-﻿int[,] Createtable(int rowCount, int columsCount)
+﻿//Создание таблицы (матрицы) со случайными числами:
+
+int[,] Createtable(int rowCount, int columsCount)
 {
     int[,] table = new int[rowCount, columsCount];
 
