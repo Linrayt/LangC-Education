@@ -1,23 +1,41 @@
-﻿int[,] Creatematrix(int rowCount, int columsCount)
+﻿//ЗАДАЧА:
+//Назовем число "интересным" если его сумма цифр ЧЁТНАЯ.
+//Создание двумерного массива, состоящего из целых чисел.
+//Вывести на экран "интересные" элементы массива.
+
+
+int[,] CreateMatrix(int rowCount, int columsCount)
 {
-    int[,] matrix = new int[rowCount, columsCount];
+    int[,] Matrix = new int[rowCount, columsCount];
 
     Random rnd = new Random();
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int i = 0; i < Matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int j = 0; j < Matrix.GetLength(1); j++)
         {
-            matrix[i, j] = rnd.Next(1, 1000);
+            Matrix[i, j] = rnd.Next(1, 1000);
         }
     }
-    return matrix;
+    return Matrix;
 }
 
-int[,] matrix Creatematrix(3, 4); 
-
-foreach (int e in matrix)
+void ShowMatrix(int[,] Matrix)
 {
-    if(isintresting(e) true)
+    for (int i = 0; i < Matrix.GetLength(0); i++)
+    {
+        for (int j = 0; j < Matrix.GetLength(1); j++)
+        {
+            Console.Write($"{Matrix[i, j]} ");
+        }
+        Console.WriteLine();
+    }
+}
+
+int[,] Matrix = CreateMatrix(3, 4);
+ShowMatrix(Matrix);
+foreach (int e in Matrix)
+{
+    if (isintresting(e) == true);
     {
         Console.WriteLine(e);
     }
@@ -25,8 +43,8 @@ foreach (int e in matrix)
 
 bool isintresting(int value)
 {
-    SumOfGidits GetSumOfGidits(value);
-    if (GetSumOfGidits % 2 == 0)
+    int SumOfGidits = GetSumOfGidits(value);
+    if (SumOfGidits % 2 == 0)
     {
         return true;
     }
