@@ -1,0 +1,5 @@
+C:\Users\sib86\Desktop\DZ\Work3\Task3\obj\Debug\net8.0\Task3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sib86\Desktop\DZ\Work3\Task3\obj\Debug\net8.0\Task3.AssemblyInfoInputs.cache
+C:\Users\sib86\Desktop\DZ\Work3\Task3\obj\Debug\net8.0\Task3.AssemblyInfo.cs
+C:\Users\sib86\Desktop\DZ\Work3\Task3\obj\Debug\net8.0\Task3.csproj.CoreCompileInputs.cache
+C:\Users\sib86\Desktop\DZ\Work3\Task3\obj\Debug\net8.0\Task3.sourcelink.json
